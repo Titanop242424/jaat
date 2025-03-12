@@ -19,12 +19,12 @@ all_users = set()  # Track all users who have interacted with the bot
 waiting_users = set()  # Track users waiting for an attack to finish
 
 # Define admin ID
-ADMIN_ID = 7163028849  # Replace with your admin's Telegram ID
+ADMIN_ID = 5747759022  # Replace with your admin's Telegram ID
 
 # Define default values
 DEFAULT_PACKET_SIZE = 512
 DEFAULT_THREADS = 750
-MAX_ATTACK_TIME = 240  # in seconds
+MAX_ATTACK_TIME = 300  # in seconds
 
 # Kolkata timezone
 KOLKATA_TZ = pytz.timezone('Asia/Kolkata')
@@ -530,7 +530,7 @@ async def dispose_unredeemed_keys():
         await asyncio.sleep(3600)  # Check every hour
 
 def main():
-    application = Application.builder().token("8022705558:AAHNho8teEshiW-rlGhtqnFO2wQPNXX0hUA").build()
+    application = Application.builder().token("7342930819:AAG_rV-mC3eAfAJG8er2Trlt52qf6YQPxeo").build()
 
     application.add_handler(CommandHandler("start", start))
     application.add_handler(CommandHandler("help", help))
