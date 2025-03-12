@@ -22,8 +22,8 @@ waiting_users = set()  # Track users waiting for an attack to finish
 ADMIN_ID = 5747759022  # Replace with your admin's Telegram ID
 
 # Define default values
-DEFAULT_PACKET_SIZE = 16
-DEFAULT_THREADS = 900
+DEFAULT_PACKET_SIZE = 512
+DEFAULT_THREADS = 750
 MAX_ATTACK_TIME = 300  # in seconds
 
 # Kolkata timezone
